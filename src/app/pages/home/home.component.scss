@@ -1,0 +1,41 @@
+main {
+    padding: 10vh;
+}
+
+.container {
+    display: flex;
+    gap: 15vh;
+    min-height: 70vh;
+}
+
+.home-title {
+    width: 70%;
+    height: auto;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 72px;
+}
+
+p {
+    font-size: 18px;
+}
+
+button {
+    margin-top: 40px;
+    background-color: var(--primary-color);
+    color: #f9f9ff;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}

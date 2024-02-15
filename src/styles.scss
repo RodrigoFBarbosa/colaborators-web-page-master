@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Open+Sans:wght@600;700&display=swap');
+
+:root {
+    --primary-color: #4A3AFF;
+    --headings-black: #0D0A2C;
+    --title-color: #585667;
+    --text-color: #7F7CA2;
+
+}
+
+html, body { height: 100%; }
+
+body { margin: 0; padding: 0; font-family: DM Sans; background-color: #f9f9ff; }
+
+a {
+    text-decoration: none;
+}
+

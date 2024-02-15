@@ -1,0 +1,127 @@
+section {
+    background-color: var(--primary-color);
+}
+
+
+
+.title-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-txt h1 {
+    font-size: 48px;
+    color: #EFEEFB;
+}
+
+h1 {
+    color: #EFEEFB;
+}
+
+h4 {
+    color: #EFEEFB;
+}
+
+h3 {
+    font-size: 28px;
+    color: var(--title-color);
+}
+
+.container p {
+    color: #EFEEFB;
+}
+
+.contacts-block {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50vh;
+    padding-right: 50vh;
+    padding-bottom: 5vh;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-bottom {
+    background-color: #EFEEFB;
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.cont-bottom p {
+    font-size: 18px;
+}
+
+.msg-social {
+    margin-top: 50px;
+    max-width: 500px;
+    padding-left: 37vh;
+}
+
+.input-email {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 550px;
+    padding-right: 37vh;
+}
+
+input {
+    font-size: 16px;
+    border: none;
+    padding-bottom: 20px;
+}
+
+#msg-box {
+    padding-bottom: 150px;
+   
+}
+
+
+
+button {
+    background-color: var(--primary-color);
+    color: #EFEEFB;
+    font-size: 16px;
+    padding: 10px 30px;
+    border: 0px solid ;
+    border-radius: 25px;
+    cursor: pointer;
+    max-width: 125px;
+    margin-bottom: 20px;
+}
+
+.img-contact {
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.social-media {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 25px;
+}
+
+.img-social {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.error-message {
+    display: none;
+    color: red;
+}
+
+.error-message.show {
+    display: block;
+}

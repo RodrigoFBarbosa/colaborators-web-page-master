@@ -1,0 +1,13 @@
+
+<main>
+    <section class="container">
+        <div class="login-container">
+            <h1>Login Account</h1>
+            <form [formGroup]="loginForm" (ngSubmit)="submitForm()" class="login-form">
+                <input class="input-form" type="text" placeholder="Email" formControlName="email">
+                <input class="input-form" type="password" placeholder="Password" formControlName="password">
+            </form>
+            <button  class="login-btn" [disabled]="loginForm.valid">Login</button>
+        </div>
+    </section>
+</main>

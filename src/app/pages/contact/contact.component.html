@@ -1,0 +1,86 @@
+
+<main>
+  <section class="container">
+    <div class="title-txt">
+      <h1>GET IN TOUCH</h1>
+    </div>
+    <div class="contacts-block">
+      <div class="contact">
+        <img class="img-contact" src="./assets/img/map-solid-72.png" alt="" />
+        <h1>ADRESS</h1>
+        <h4>RoarTech Contracting</h4>
+        <p>000 Center 14300000</p>
+        <p>São Paulo, Brazil</p>
+      </div>
+      <div class="contact">
+        <img class="img-contact" src="./assets/img/phone-solid-72.png" alt="" />
+        <h1>PHONE</h1>
+        <h4>RoarTech Contracting</h4>
+        <p>+55 (16) 993888888, cellphone</p>
+        <p>+55 (16) 3660 0000, phone</p>
+      </div>
+      <div class="contact">
+        <img
+          class="img-contact"
+          src="./assets/img/envelope-solid-72.png"
+          alt=""
+        />
+        <h1>EMAIL</h1>
+        <h4>Request for proposal</h4>
+        <p>info@roartech.com</p>
+      </div>
+    </div>
+  </section>
+  <section class="cont-bottom">
+    <div class="msg-social">
+      <h3>Hey! We are looking forward to start a project with you!</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequa
+      </p>
+      <div class="social-media">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img
+            class="img-social"
+            src="./assets/img/facebook-logo-36.png"
+            alt="facebook"
+          />
+        </a>
+        <a href="https://twitter.com/" target="_blank"
+          ><img
+            class="img-social"
+            src="./assets/img/twitter-logo-36.png"
+            alt="twitter"
+        /></a>
+
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img
+            class="img-social"
+            src="./assets/img/instagram-logo-36 (1).png"
+            alt="instagram"
+        /></a>
+        <a href="https://www.linkedin.com/" target="_blank"
+          ><img
+            class="img-social"
+            src="./assets/img/linkedin-logo-36.png"
+            alt="linkedin"
+        /></a>
+      </div>
+    </div>
+    <div>
+      <form class="input-email" (submit)="submitForm()">
+        <input id="name" name="name" type="text" [(ngModel)]="name" (blur)="validateName()" placeholder="Enter your name" />
+        <div class="error-message" [class.show]="nameError">{{ nameError }}</div>
+
+        <input id="email" name="email" type="text" [(ngModel)]="email" (blur)="validateEmail()" placeholder="Enter a valid email adress" />
+        <div class="error-message" [class.show]="emailError">{{ emailError }}</div>
+
+        <textarea id="msg-box" name="msg-box" type="text" [(ngModel)]="message" (blur)="validateMessage()" placeholder="Enter your message" ></textarea>
+        <div class="error-message" [class.show]="messageError">{{ messageError }}</div>
+        <button class="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+</main>
